@@ -41,7 +41,7 @@ body {
 }
 
 .logo{
-	/* padding-top: 65px; */
+	margin-top: 10%:
 }
 
 h1 {
@@ -128,4 +128,52 @@ button:active {
 
 footer{
 	margin: 1em auto;
+}
+
+@media only screen and (max-width: 500px){
+
+	.hero-d {
+		display: none;
+	}
+
+	.main{
+		margin-top: 15%;
+		width: 500px;
+	}
+
+	.logo{
+		margin-left: 3%;
+	}
+
+	.hero-m{
+		background-image: url(/images/hero-mobile.jpg);
+		background-position: top right;
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 20vh;
+		margin-top: 5%;
+	}
+
+	h1 {
+		padding-top: 50px;
+		text-align: center;
+	}
+
+	.copy {
+		width: 450px;
+		text-align: center;
+		padding-left: 10%;
+		font-size: 16;
+	}
+
+	.eform {
+		padding-left: 10%;
+	}
+
+	.btn {
+		left: 350px;
+	}
+
+
+	
 }
