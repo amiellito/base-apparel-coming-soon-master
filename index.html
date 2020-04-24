@@ -48,12 +48,16 @@
             </p>
           </div>
 
-          <div class="eform">
-            <input type="text" placeholder="Email Address" />
-            <div class="error-icon"></div>
-            <button class="btn" type="submit">></button>
-            <small>Please provide a valid email</small>
-          </div>
+          <form id="form" class="form">
+            <div class="formControl">
+              <input type="text" id="email" placeholder="Enter email" />
+              <div class="error-icon"></div>
+              <button class="btn" type="submit">></button>
+              <div class="small">
+                <small>Please provide a valid email</small>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
 
@@ -70,5 +74,7 @@
         >. Coded by <a href="#">Amiel Lapuebla</a>.
       </p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

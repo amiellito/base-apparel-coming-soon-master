@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --success-color: #32cd32;
+  --error-color: #f96464;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -60,7 +65,7 @@ p {
   line-height: 2em;
 }
 
-.eform {
+.formControl {
   padding-top: 50px;
   position: relative;
 }
@@ -84,10 +89,10 @@ input[type="text"] {
   position: absolute;
   top: 65px;
   left: 270px;
+  visibility: hidden;
 }
 
 small {
-  position: absolute;
   color: #f96464;
   top: 120px;
   left: 35px;
@@ -135,7 +140,31 @@ button:active {
 /* FOOTER */
 
 footer {
-  margin: 1em auto;
+  margin: 2em auto;
+}
+
+/* CSS VALIDATOR */
+
+.formControl.success input {
+  border-color: var(--success-color);
+}
+
+.formControl.error input {
+  border-color: var(--error-color);
+}
+
+.formControl small {
+  color: var(--error-color);
+  position: absolute;
+  visibility: hidden;
+}
+
+.formControl.error small {
+  visibility: visible;
+}
+
+.formControl.error .error-icon {
+  visibility: visible;
 }
 
 @media only screen and (max-width: 500px) {
@@ -172,7 +201,7 @@ footer {
     font-size: 16;
   }
 
-  .eform {
+  .formControl {
     padding-left: 10%;
   }
 
@@ -186,7 +215,8 @@ footer {
   }
 
   small {
+    position: absolute;
     top: 120px;
-    left: 80px;
+    left: 85px;
   }
 }
