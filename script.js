@@ -9,9 +9,11 @@ function showError(input, message) {
 }
 
 //Show success outline
-function showSuccess(input) {
+function showSuccess(input, message) {
   const formControl = input.parentElement;
   formControl.className = "formControl success";
+  const small = formControl.querySelector("small");
+  small.innerText = message;
 }
 
 //Check if email is valid
@@ -29,6 +31,6 @@ form.addEventListener("submit", function(e) {
   } else if (!isValidEmail(email.value)) {
     showError(email, "Email is not valid");
   } else {
-    showSuccess(email);
+    showSuccess(email, "Success!");
   }
 });

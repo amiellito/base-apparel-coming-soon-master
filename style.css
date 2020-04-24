@@ -149,6 +149,11 @@ footer {
   border-color: var(--success-color);
 }
 
+.formControl.success small {
+  visibility: visible;
+  color: var(--success-color);
+}
+
 .formControl.error input {
   border-color: var(--error-color);
 }
