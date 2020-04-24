@@ -77,6 +77,22 @@ input[type="text"] {
   background-color: rgba(0, 0, 0, 0);
 }
 
+.error-icon {
+  background-image: url(/images/icon-error.svg);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 65px;
+  left: 270px;
+}
+
+small {
+  position: absolute;
+  color: #f96464;
+  top: 120px;
+  left: 35px;
+}
+
 ::placeholder {
   color: hsl(0, 36%, 70%);
 }
@@ -162,5 +178,15 @@ footer {
 
   .btn {
     left: 350px;
+  }
+
+  .error-icon {
+    top: 65px;
+    left: 310px;
+  }
+
+  small {
+    top: 120px;
+    left: 80px;
   }
 }
